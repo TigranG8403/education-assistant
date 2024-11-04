@@ -1,0 +1,10 @@
+kivy
+pydantic
+requests
+speech_recognition
+pyaudio
+pydub
+moviepy
+fitz
+python-docx
+python-pptx
