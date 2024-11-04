@@ -9,3 +9,4 @@ bert_punctuation
 torch>=1.1.0
 pytorch_pretrained_bert==0.6.2
 pymorphy2==0.8
+sacremoses
