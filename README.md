@@ -5,7 +5,7 @@
 ### Шаги для установки клиента:
 1. Скачивание и разархивирование папки client;
 2. Импорт полученной папки (как проекта) в среду разработки (PyCharm, VS Code) и установка в неё виртуального окружения Python 3.12;
-3. В терминале выполните команду: `kivy pydantic requests speech_recognition pyaudio pydub moviepy fitz python-docx python-pptx` или переместите requirements.txt во вложенную папку Scripts папки виртуального окружения и в cmd выполните команды: 1) `cd путь_к_разархивированной_папке_репозитория\папка_вирт_окруж\Scripts`, 2) `pip install -r requirements.txt`
+3. В терминале выполните команду: `pip install kivy pydantic requests speech_recognition pyaudio pydub moviepy fitz python-docx python-pptx` или переместите requirements.txt во вложенную папку Scripts папки виртуального окружения и в cmd выполните команды: 1) `cd путь_к_разархивированной_папке_репозитория\папка_вирт_окруж\Scripts`, 2) `pip install -r requirements.txt`
 4. Запуск client.py через среду разработки.
 
 ### Если вы хотите развернуть серверную часть на своём устройстве (продвинутый уровень):
