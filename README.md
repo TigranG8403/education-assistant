@@ -5,13 +5,13 @@
 ### Шаги для установки клиента:
 1. Скачивание и разархивирование папки client;
 2. Импорт полученной папки (как проекта) в среду разработки (PyCharm, VS Code) и установка в неё виртуального окружения Python 3.12;
-3. В терминале выполните команду: `pip install kivy pydantic requests speech_recognition pyaudio pydub moviepy fitz python-docx python-pptx` или переместите requirements.txt во вложенную папку Scripts папки виртуального окружения и в cmd выполните команды: 1) `cd путь_к_разархивированной_папке_репозитория\папка_вирт_окруж\Scripts`, 2) `pip install -r requirements.txt`
+3. В терминале выполните команду: `pip install kivy pydantic requests SpeechRecognition pyaudio pydub moviepy fitz python-docx python-pptx` или переместите requirements.txt во вложенную папку Scripts папки виртуального окружения и в cmd выполните команды: 1) `cd путь_к_разархивированной_папке_репозитория\папка_вирт_окруж\Scripts`, 2) `pip install -r requirements.txt`
 4. Запуск client.py через среду разработки.
 
 ### Если вы хотите развернуть серверную часть на своём устройстве (продвинутый уровень):
 1. Скачивание и разархивирование папки server;
 2. Импорт полученной папки (как проекта) в среду разработки (PyCharm, VS Code) и установка в неё виртуального окружения Python 3.11;
-3. В терминале выполните команду: `pip install fastapi uvicorn pytubefix pydub speech_recognition html transformers bert_punctuation torch>=1.1.0 pytorch_pretrained_bert==0.6.2 pymorphy2==0.8 sacremoses` или переместите requirements.txt во вложенную папку Scripts папки виртуального окружения и в cmd выполните команды: 1) `cd путь_к_разархивированной_папке_репозитория\папка_вирт_окруж\Scripts`, 2) `pip install -r requirements.txt`
+3. В терминале выполните команду: `pip install fastapi uvicorn pytubefix pydub SpeechRecognition html transformers bert_punctuation torch>=1.1.0 pytorch_pretrained_bert==0.6.2 pymorphy2==0.8 sacremoses` или переместите requirements.txt во вложенную папку Scripts папки виртуального окружения и в cmd выполните команды: 1) `cd путь_к_разархивированной_папке_репозитория\папка_вирт_окруж\Scripts`, 2) `pip install -r requirements.txt`
 4. [Скачивание архива с весами BERT](https://drive.google.com/file/d/190dLqhRjqgNJLKBqz0OxQ3TzxSm5Qbfx) в папку server;
 5. Редактирование кода: в среде разработки нажимаем Ctrl-F: 1) server.py: uvicorn.run("server:app", reload=True, host = "192.168.3.10", port=1234) и заменяем в этой строке данные: "host = "ваш_локальный_ip", port=ваш_порт";
                                                             2) client.py: "http://176.56.54.46:1234" и заменяем все экземпляры на "http://ваш_стат_или_локал_ip:ваш_порт";
