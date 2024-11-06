@@ -2,7 +2,7 @@ fastapi
 uvicorn
 pytubefix
 pydub
-speech_recognition
+SpeechRecognition
 html
 transformers
 bert_punctuation
